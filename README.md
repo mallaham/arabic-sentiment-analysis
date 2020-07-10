@@ -6,12 +6,14 @@ All dependancies can be found in `requirements.txt` file.
 
 1. Install requirements: `pip install -r requirements.txt`
 
-2. ` python main.py --vectors embeddings/arabic-news.bin --train_dataset datasets/tweets/ASTD.csv --score_dataset datasets/tweets/ArTwitter.csv`
+2. Download word embeddings from the link provided in `embeddings/README.md`  
+
+3. ` python main.py --vectors embeddings/arabic-news.bin --train_dataset datasets/tweets/ASTD.csv --score_dataset datasets/tweets/ArTwitter.csv`
 
 ##### Command Line Arguments:
-- `vectors`:
-- `train_dataset`:
-- `score_dataset`:
+- `vectors`: word embeddings
+- `train_dataset`: path to training file
+- `score_dataset`: path to file for scoring (i.e., to make predictions on)
 
 ##### Supported Classifiers:
 Below is a tentative list of supported classifiers:
